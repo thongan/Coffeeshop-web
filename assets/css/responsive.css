@@ -1,0 +1,685 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Setting */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Main nè */
+#page-header{
+    height: 68px; 
+    background-color:#000;
+    top:0;
+    right:0;
+    bottom:0;
+    left: 0; 
+    padding: 0 26px;
+    display: flex;
+    justify-content: space-between;  
+}
+
+#page-header .left-header {
+    position: relative; 
+}
+
+#page-header .left-header .logo {
+    position: absolute; 
+    height: 100%;
+}
+
+#page-header .logo .barista-logo {
+    display: flex; 
+    height: 100%;
+    font-size: 14px;
+    align-items: center;
+}
+
+#page-header .logo .barista-logo img {
+   height: 50%;
+   line-height: 50%;
+}
+
+#page-header .right-header {
+    display: flex;
+}
+
+#page-header .right-header .menu  {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+#page-header .right-header .menu > div { 
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+#page-header .right-header .menu div a {
+    text-decoration: none; 
+    color: #fff; 
+    font-size: 15px;
+    font-family: Oswald, sans-serif; 
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#page-header .right-header .icon {
+    display: flex;
+    align-items: center;
+}
+
+#page-header .right-header .icon .shopping-cart {
+    padding: 0 20px 0 16px; 
+    border-left: 2px solid rgba(236, 236, 236, 0.4);
+}
+
+#page-header .right-header .icon a,
+#page-header .right-header .icon .shopping-cart a{
+    color: #fff; 
+    text-decoration: none;
+    font-size: 18px; 
+    font-weight: 2000px;      
+}
+
+
+#slider{
+    position:relative;
+    padding-top: 40%;
+    background: url('./img/picture/barista-guy.jpg') top center / cover no-repeat ; 
+}
+
+
+
+#slider .barista-text{
+    position: absolute;
+    bottom: 40%;
+    transform: translate(80px, 100px);
+    
+}
+
+#slider .barista-text .big-text {
+    color: #fff;
+    font-size: 38px;
+    text-shadow: 0 0 1px #000;
+    margin-bottom: 10px;
+}
+
+#slider .barista-text .small-text {
+    color:#fff;
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 0.8;
+    text-shadow: 0 0 1px #000;
+    font-style: italic;
+    line-height: 2.1em;
+}
+
+#slider .barista-text .read-btn {
+    display: block;
+    width: max-content;
+    color: #fff;
+    border: 2px solid #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 16px 34px;
+    margin-top: 20px;
+}
+
+#slider .barista-text .read-btn:hover  {
+    color: black;
+    background-color: #fff;
+}
+
+#container{
+   width: 100% ;
+   height: auto; 
+}
+#content1{  
+    width: 100%;
+    max-width: 100%; 
+    height: 1;   
+    background-color: #080604; 
+    
+}
+
+#content1 .intro-cafe  {
+    display: flex; 
+    flex-direction: column;
+    padding-left: 100px; 
+    padding-right: 100px;
+     
+}
+
+#content1 .intro-heading {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 0; 
+}
+
+#content1 .text-heading1 {
+    color:  #6f4e37;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 16px; 
+    font-style: italic;
+}
+
+#content1 .text-heading2 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 850;
+    
+}
+
+#content1 .intro-body {
+    display : flex; 
+    width: 100%; 
+    padding-bottom: 50px; 
+}
+
+#content1 .intro-body .intro-contentL {
+    flex: 1; 
+    padding: 0 10px 20px 0;
+}
+
+#content1 .intro-body .intro-contentM {
+    flex: 1; 
+    padding: 0 20px 20px;
+}
+
+#content1 .intro-body .intro-text h3  {
+    color: #fff;
+    padding: 24px 0; 
+    font-size: 22px; 
+    font-weight: 800;  
+}
+
+#content1 .intro-body .intro-text p {
+    color: #fff;
+    opacity: 0.5; 
+    font-size: 14px;
+    line-height: 1.4;  
+}
+
+#content1 .intro-body .intro-btn a,
+#content1 .intro-body .intro-btn {
+    padding: 30px 0 ; 
+    text-decoration: none;
+    font-size: 14px; 
+    color: #6f4e37;
+
+}
+
+#content1 .intro-body .intro-contentR {
+    flex: 1; 
+    padding: 0 10px ;
+} 
+
+#content1 .intro-contentR .bodyR {
+    position: relative;
+    border: 3px solid #fff; 
+
+}
+
+#content1 .day-time {
+    position: absolute;
+    top: 26px;  
+    left: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+#content1 .titleR {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 800;
+    padding-bottom: 26px;
+}
+
+#content1 .hoursR {
+    color: #ccc;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+#content1 .dayR {
+    color: #fff;
+    font-size: 20px; 
+    font-weight: 900; 
+    padding: 10px 0; 
+}
+
+#content1 .phone-numbers {
+    color:#ac8f7b;
+    font-size: 20px;
+    padding: 10px 0 ;
+}
+
+#content2{
+    width: 100%;
+    height: auto ;
+    background: url('./img/picture/home-parallax.jpg') center center/ cover no-repeat;
+     
+} 
+
+#content2 .barista-app {
+    display: flex;
+    padding: 80px 100px;  
+}
+
+#content2 .barista-app .text-app {
+    flex: 1; 
+    padding-right: 80px ;
+}
+
+#content2 .barista-app .text-app .textL h2,
+#content2 .barista-app .text-app .textL h3,
+#content2 .barista-app .text-app .textL p {
+    color: #fff;
+
+}
+
+
+
+#content2 .barista-app .text-app .textL h3{
+    padding: 20px 0 ; 
+    font-size: 30px; 
+
+}
+
+#content2 .barista-app .text-app .textL p {
+    opacity: 0.6;
+    text-align: justify;
+    padding-top: 16px;
+    padding-bottom: 40px;  
+}
+
+
+#content2 .barista-app .text-app .app-btn a {
+    background-color:#fff;
+    color: #000;  
+    padding: 16px; 
+    text-decoration: none;
+    font-size: 14px; 
+}
+
+#content2 .barista-app .text-app .app-btn:hover a {
+    background-color: #ccc;
+    color: rgb(187, 27, 27); 
+}
+ 
+#content2 .barista-app .app-video {
+    flex: 1; 
+    padding-left: 50px; 
+    position: relative;
+}
+
+#content2 .barista-app .app-video i {
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    color: #fff;
+    font-size: 50px;
+}
+
+#content2 .app-slide {
+    display: flex; 
+    padding-top: 40px; 
+}
+
+
+#content2 .app-slide .slide-img img {
+    width: 100%;
+}
+
+#content3{
+    width: 100%;
+    max-width: 100%; 
+    height: 1;   
+    background-color: #080604;
+}
+
+
+#content3 .intro-cafe  {
+    display: flex; 
+    flex-direction: column;
+    padding-left: 100px; 
+    padding-right: 100px;
+     
+}
+
+#content3 .intro-heading {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 80px; 
+}
+
+#content3 .text-heading1 {
+    color:  #6f4e37;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 16px; 
+    font-style: italic;
+}
+
+#content3 .text-heading2 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 850;
+}
+
+#content3 .bottom-line {
+    color: #fff;
+    font-size: 60px; 
+}
+
+#content3 .coffee-menu {
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+#content3 .coffee-menu .coffee-flavor {
+    flex: 1; 
+    padding: 0 20px; 
+}
+
+#content3 .coffee-menu .coffee-flavor .coffee-flavor__img {
+    width: 100%; 
+    height: 328px;
+}
+
+#content3 .coffee-menu .coffee-flavor h3{
+    color:#fff; 
+    text-align:center; 
+    padding: 38px 20px 0 20px;
+    font-size: 19px;
+}
+
+#content3 .coffee-menu .coffee-flavor p{
+    color:#fff; 
+    text-align:center; 
+    padding-top: 12px;
+    padding-bottom: 98px; 
+    font-size: 14px; 
+    font-weight: 800; 
+}
+
+
+
+#content4{
+    background: url('./img/picture/home-parallax-2.jpg') center center/ cover no-repeat;
+    width: 100%;
+    max-height: 400px; 
+}
+
+#content4 .review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 100px; 
+}
+
+#content4 .review__comma {
+    color: #C7A17A; 
+    font-size: 80px;
+}
+
+#content4 .review__customer {
+    color: #fff; 
+    text-align:center;
+    padding: 0 20px 30px 20px; 
+    line-height: 1.5;
+    font-size: 18px;  
+    opacity: 0.8;
+}
+
+#content4 .review__customer--name {
+    color: #fff;
+    font-size: 20px;
+    font-weight:800;
+}
+
+#content5{
+    background: url('./img/picture/footer-img.jpg') center center / cover no-repeat; 
+    width: 100%; 
+    max-height: 500px ;
+}
+
+#content5 .information {
+    display: flex; 
+    padding: 58px 78px 58px 0; 
+}
+
+#content5 .information__opening {
+    flex: 1;
+    padding: 0 15px; 
+}
+
+#content5 .opening--heading {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800; 
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+
+#content5 .opening-closing .hoursR {
+    color: #fff;
+    opacity: 0.6;
+    font-size: 18px;
+    padding-bottom: 14px;
+}
+
+#content5 .opening-closing .dayR {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800; 
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+
+
+.information__news{
+    flex:1; 
+    padding: 0 15px; 
+}
+
+
+
+#content5 .information__news--heading{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800; 
+    padding-bottom: 20px; 
+}
+
+
+#content5 .information__news--body {
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+#content5 .information__news--body--line {
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    margin: 22px 0;
+    line-height: 1.4;
+
+}
+
+#content5 .information__news--content{
+    color: #fff;
+    font-size: 12px; 
+    font-weight: 800;
+}
+
+#content5 .information__news--day-time {
+    color: #c7a17a;
+    font-size: 12px; 
+    font-weight: 500;
+    padding-bottom: 16px;
+    
+}
+
+#content5 .information__contact {
+    flex: 1;
+    padding: 0 15px;  
+
+}
+
+#content5 .contact__heading {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+    padding-bottom: 40px;
+}
+
+#content5 .contact__body {
+    color: #fff;
+    opacity: 0.5; 
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+#content5 .contact__body .contact__body--brown {
+    color: #C7A17A;
+    text-decoration: none;
+}
+
+#content5 .contact__sub-heading {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    padding-top: 34px;
+    padding-bottom: 40px; 
+}
+
+#content5 .contact__input .input--email {
+    background-color: transparent;
+    padding:11px 12px ;
+    border: 1px solid #fff; 
+    font-size: 14px;
+}
+
+#content5 .contact__input .input__play--brown {
+    background-color: #C7A17A;
+    padding: 12px 11px;
+    margin-left: 2px;  
+    border: 2px solid #fff;
+}
+
+#content5 .information__location {
+    flex: 1; 
+    padding: 0 15px; 
+}
+
+#content5 .location__heading{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    padding-bottom: 40px; 
+}
+
+#content5 .location__body {
+    padding-bottom: 20px;
+}
+
+#content5 .location__body h5 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 900; 
+    padding-bottom: 28px;
+}
+
+#content5 .location__body p {
+    color: #fff;
+    opacity: 0.5; 
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+#content5 .location__sub-body{
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+
+#content5 .location__sub-body h5 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 900;
+    padding-top: 24px; 
+    padding-bottom: 28px; 
+}
+
+#content5 .location__sub-body p {
+    color: #fff;
+    opacity: 0.5; 
+    font-size: 14px;
+    line-height: 1.6;
+        
+}
+
+#footer {
+    background-color:#000;
+    width: 100%;
+    height: 54px;
+    padding: 18px 0;
+}
+
+#footer .wrap {
+    display: flex ;
+    position: relative; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer .wrap__logo-reverse a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+#footer .wrap__social-media a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 0 12px;
+
+}    
+    
+
+#footer .wrap__social-media a:hover {
+    color: #C7A17A;
+    animation: colorMove 5s linear infinite ; 
+}
+    
+
+
+@keyframe colorMove {
+   0% {
+    transform: rotate(0);
+   }
+   100% {
+    transform: rotate(360);
+   }
+}
+
+#footer .wrap__right-reverse a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    opacity: 0.6;
+}
